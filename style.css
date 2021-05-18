@@ -1,0 +1,13 @@
+ul li{
+    color: blue;
+    list-style-type: disc;
+}
+
+.bold-prargraph{
+    color: blueviolet;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+}
