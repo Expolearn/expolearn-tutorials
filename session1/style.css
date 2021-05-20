@@ -1,3 +1,4 @@
+
 ul li{
     color: blue;
     list-style-type: disc;
@@ -10,4 +11,57 @@ ul li{
 
 a{
     text-decoration: none;
+}
+
+
+.welcome{
+    font-size: 22px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.auth li{
+    list-style-type: none;
+}
+.auth{
+    text-align: center;
+}
+
+.auth .login a, .auth .register a{
+    text-decoration: none;
+    color: #fd8a06 !important;
+}
+
+.login .register{
+    font-size: 72px;
+    margin: 20px;
+}
+
+.name, .email, .tel, .address, .password{
+    margin: 3px
+}
+
+.name label, .email label, .tel label, .address label, .password label{
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+}
+.name #name, .email #email, .tel #tel, .address #address, .password #password{
+    width: 200px;
+    margin-left: 10px;
+}
+.login-btn{
+    background-color: green;
+}
+.signup-btn{
+    background-color: #1380c9;
+}
+
+.login-btn, .signup-btn{
+    width: 100px;
+    border-radius: 10px;
+    height: 40px;
+}
+.register{
+    margin-top: 50px;
 }

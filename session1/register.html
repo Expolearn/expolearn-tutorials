@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="register">
+        <form action="./index.php" method="post">
+            <div class="name">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="tel">
+                <label for="tel">Tel </label>
+                <input type="tel" name="tel" id="tel">
+            </div>
+            <div class="address">
+                <label for="address">Address </label>
+                <input type="address" name="address" id="address">
+            </div>
+            <div class="password">
+                <label for="password">Password </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+    </div>
+</body>
+
+</html>
