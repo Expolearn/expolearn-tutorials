@@ -1,0 +1,57 @@
+.mainMenuBtn{
+    background-color: #074cce;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    margin-top: 20px;
+}
+.content{
+  background-image: linear-gradient(to top, #3d08b9 10%, #c2dffb 30%, rgb(42, 53, 10) 60%, #121fd8 100%);
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.mainMenuBtn:hover{
+    background-color: #5f91f0;
+}
+
+.collapse{
+    position: absolute;
+    display: inline-block;
+}
+.collapse li{
+    list-style-type: none;
+}
+
+.collapse:hover{
+    display: none;
+}
+.collapse:hover{
+    display: block;
+}
+.item-dropdown{
+    background-color: #074cce;
+    min-width: 150px;
+    visibility: collapse;
+    display: none;
+}
+
+.dropdown li{
+    color: #074cce;
+    padding: 10px;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.dropdown:hover, .dropdown:active, .dropdown:focus{
+    display: block;
+    visibility: visible;
+}
