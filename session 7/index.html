@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $(".hidden").hide();
+            var b = $(".btn");
+            b.click(function () {
+                $(".hidden").show();
+                $(this).html("View less");
+                b.click(function () {
+                    $(".hidden").toggle();
+                });
+            });
+
+        });
+
+
+    </script>
+
+    <title>jQuery</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="card-group">
+            <div class="card">
+                <div class="card-header bg-danger">
+                    <div class="card-title ">
+                        <h4 class="text-white">jQuery Fundamental</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>This is the Fundamental of jQuery.
+                        <b>Here we will learn how to animate html classes and id.</b>
+                    </p>
+                    <p class="hidden"> This will show when the view more button is cliked.</p>
+                    <button class="btn btn-md btn-outline-primary" id="view" type="submit">View
+                        more</button>
+                </div>
+                <div class="card-footer bg-success">
+                    <em class="text-white">This is a responsive footer </em>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-danger">
+                    <div class="card-title ">
+                        <h4 class="text-white">jQuery Fundamental</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>This is the Fundamental of jQuery.
+                        <b>Here we will learn how to animate html classes and id.</b>
+                    </p>
+                    <p class="hidden"> This will show when the view more button is cliked.</p>
+                    <button class="btn btn-md btn-outline-primary" id="view" type="submit">View
+                        more</button>
+                </div>
+                <div class="card-footer bg-success">
+                    <em class="text-white">This is a responsive footer </em>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-danger">
+                    <div class="card-title ">
+                        <h4 class="text-white">jQuery Fundamental</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>This is the Fundamental of jQuery.
+                        <b>Here we will learn how to animate html classes and id.</b>
+                    </p>
+                    <p class="hidden"> This will show when the view more button is cliked.</p>
+                    <button class="btn btn-md btn-outline-primary" id="view" type="submit">View
+                        more</button>
+                </div>
+                <div class="card-footer bg-success">
+                    <em class="text-white">This is a responsive footer </em>
+                </div>
+            </div>
+        </div>
+        <div class="assignment jumbotron">
+            <h3> Assignment on jQuery and Bootstrap</h3>
+            <p>Modify your portfolio to use card-group class that is responsive. Use jQuery to View more content when
+                the user
+                clicks or hover on the view more button for each card. View more on one card should not show the extra
+                content
+                on the other card.</button></p>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
