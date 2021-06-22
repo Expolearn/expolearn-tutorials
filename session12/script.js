@@ -1,6 +1,8 @@
 $(document).ready(function () {
-  // Define a class Camper whic takes details of a camper. The instructor is also a camper but has a characteristic of teaching and a student is a camper with the characteristic of leaner
-
+  /* Define a class Camper whic takes details of a camper. 
+   The instructor is also a camper but has a characteristic of teaching 
+   and a student is a camper with the characteristic of leaner
+*/
   var camper = document.getElementById("camper");
   var student = document.getElementById("student");
   var instructor = document.getElementById("instructor");
@@ -19,17 +21,16 @@ $(document).ready(function () {
     }
   }
 
-  var C = new Camper();
-  camperDetails = C.getUserDetails(
-    "Murendeni",
-    "Ramavhale",
+  var camper = new Camper();
+
+  camperDetails = camper.getUserDetails(
+    "John",
+    "Doe",
     30,
     "Male",
-    "New things"
+    "Mobile App Development"
   );
-
   camper.innerHTML = camperDetails;
-
 
 // Student camper
 class Student extends Camper {
@@ -40,7 +41,7 @@ class Student extends Camper {
     this.path = path;
   }
 
-  getStudentDettails(courses, level, path) {
+  getStudentDetails(courses, level, path) {
     return courses + " " + level + " " + path;
   }
 }
@@ -48,8 +49,7 @@ Stud = new Student();
 studentDetails = Stud.getUserDetails(
   ["Js","jQuery", "HTML","cSS/SCSS" ],
   "Mudau",
-  "Bootcamp",
-  "Web Development"
+  "Bootcamp Web Development",
 );
 student.innerHTML = studentDetails;
 
