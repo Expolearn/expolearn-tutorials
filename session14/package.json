@@ -1,0 +1,6 @@
+{
+    "author": "Joel Tiogo",
+    "dependencies": {
+        "readline": "^1.3.0"
+    }
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script+Robot:wght@500&display=swap');
+
+h3 {
+    font-weight: 900;
+    font-size: 24px;
+    color: #1897e0;
+}
+
+.header {
+    font-weight: bolder;
+    color: red;
+    text-align: center;
+    font-size: 32px;
+    padding: 20px;
+}
+
+ h1{
+    text-transform: uppercase;
+    text-decoration: dashed;
+}
+
+p{
+    font-family: 'Dancing Script', cursive, "Robot";
+}
