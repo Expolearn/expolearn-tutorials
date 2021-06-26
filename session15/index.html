@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json and AJAX (API Call)</title>
+    <script src="./script.js"></script>
+    <style>
+        .user {
+
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            background-color: #c2c2c2;
+        }
+
+        .user ul li {
+            list-style-type: none;
+            color: #2971c2;
+        }
+
+        button {
+            width: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid #2971c2;
+        }
+
+        button:hover {
+            background: #2971c2;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="user"></div>
+    <button id="btn">Load user</button>
+    <script>
+
+
+        var loadUsers = function () {
+            var userlist = "https://api.github.com/users";
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", userlist, true);
+            xhr.onload = function () {
+                if (this.status == 200) {
+                    var users = JSON.parse(this.responseText);
+                    var out = '';
+                    for (var i in users) {
+                        out += '<div class="user">' +
+                            '<img src=' + users[i].avatar_url + '"width="100"; height="100"/>' +
+                            '<ul> ' +
+                            "<li>ID: " +
+                            users[i].id + "</li>" +
+
+                            "<li>Login:" +
+                            users[i].login + "</li>" +
+                            "<li>Events URL:" +
+                            users[i].events_url + "</li>"
+                            +
+                            "<li>Is a site admin:" +
+                            users[i].site_admin + "</li>"
+                            + "</ul>" + '</div>'
+                    }
+                }
+
+                document.getElementById('user').innerHTML = out;
+            }
+            // sends requests
+            xhr.send();
+        }
+        document.getElementById('btn').addEventListener('click', loadUsers);
+
+        //  HTTP Statuses
+        // 200: OK
+        // 403: Forbidden
+        // 404: Not found
+
+
+    </script>
+</body>
+
+</html>
