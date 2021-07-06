@@ -26,5 +26,11 @@ const basic_details = {
 for (let i in basic_details) {
   console.log(basic_details[i]);
 }
+
+// Assignment
+
+// create list of users with each users having basic details and roles such as admin, staff, student, cleaner.
+// Create a basic details viewer which shows to a particular person some details and not to the other person.
+
 // leetcode
 // console.log(basic_details);
