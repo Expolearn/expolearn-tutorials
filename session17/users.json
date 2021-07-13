@@ -1,0 +1,17 @@
+
+[
+            {"name": "Tshifiwa",
+            "age": 23,
+            "city": "Limpopo"
+        },
+        {
+            "name": "Ramavhale",
+            "age": 24,
+            "city": "Polokwane"
+        },
+        {
+            "name": "Joel",
+            "age": 27,
+            "city": "Johannesburg"
+        }
+]

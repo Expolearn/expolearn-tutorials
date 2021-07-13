@@ -1,0 +1,22 @@
+{
+  "name": "session17",
+  "version": "1.0.0",
+  "description": "This is our first nodejs package",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "npm start"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "javascript",
+    "script"
+  ],
+  "author": "Joel Tiogo",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "react": "^17.0.2"
+  }
+}
