@@ -1,0 +1,15 @@
+{
+  "name": "expolearn-session-21",
+  "version": "1.0.0",
+  "description": "In this session, we dive into react components and introduce state management.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Expolearn Bootcamp",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^5.13.5"
+  }
+}
